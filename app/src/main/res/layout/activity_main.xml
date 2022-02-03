@@ -14,63 +14,64 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="392dp"
-            android:layout_height="69dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginStart="1dp"
             android:background="@color/bottom"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/direct"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-
-                android:text="@string/accueil"
-                android:textColor="@color/white"
-
-                android:textSize="11sp" />
-
-            <Button
-                android:id="@+id/button6"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:drawableTop="@drawable/ball"
                 android:text="@string/direct"
                 android:textColor="@color/white"
                 android:textSize="11sp" />
 
-
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/search"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:drawableTop="@drawable/search"
+                android:text="@string/recherche"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/favoris"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@android:drawable/btn_star"
                 android:text="@string/favoris"
                 android:textColor="@color/white"
                 android:textSize="11sp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/classement"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:drawableTop="@android:drawable/ic_menu_sort_by_size"
                 android:text="@string/classement"
                 android:textColor="@color/white"
                 android:textSize="11sp" />
+
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
-            android:layout_width="395dp"
-            android:layout_height="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:alpha="0.5"
             android:background="@color/bottom"
             app:layout_constraintEnd_toEndOf="parent"
@@ -78,27 +79,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/imageButton11"
-                android:layout_width="25dp"
-                android:layout_height="37dp"
-                android:layout_marginStart="316dp"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/search"
-                android:scaleType="fitCenter"
-                android:text="@string/search"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/search" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
-                android:layout_width="25dp"
-                android:layout_height="37dp"
-                android:layout_marginEnd="14dp"
+                android:id="@+id/parametre"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:baselineAligned="false"
@@ -114,6 +100,7 @@
                 app:srcCompat="@drawable/img_1564" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
