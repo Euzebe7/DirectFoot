@@ -7,4 +7,28 @@
     <string name="favoris">Favoris</string>
     <string name="classement">Classement</string>
     <string name="search">search</string>
+    <string name="team_1">Team 1</string>
+    <string name="score">Score</string>
+    <string name="date">Date</string>
+    <string name="team_2">Team 2</string>
+    <string name="statut">Statut</string>
+    <string name="score_1">Score</string>
+    <string name="score_2">Score</string>
+    <string name="imageequipe">imageEquipe</string>
+    <string name="equipe">Paris ST. Germain</string>
+    <string name="equipe_title">Equipes</string>
+    <string name="rank_title">Rang</string>
+
+
+    <string name="points">Points</string>
+    <string name="j">J</string>
+    <string name="g">G</string>
+    <string name="n">N</string>
+    <string name="p">P</string>
+    <string name="diff_but">+/-</string>
+    <string name="bp">BP</string>
+    <string name="bc">BC</string>
+    <string name="v">V</string>
+    <string name="rank">1</string>
+    <string name="logo">Logo</string>
 </resources>

@@ -15,29 +15,73 @@
         android:layout_height="match_parent">
 
 
-
-        <ScrollView
-            android:id="@+id/scroll"
+        <LinearLayout
+            android:id="@+id/classement_general"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/accueil"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:background="#B39494"
+            android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            tools:layout_editor_absoluteY="86dp">
 
-            <LinearLayout
-                android:id="@+id/content"
+            <ScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="36dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/contenu_droite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/classement_gauche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#604E4E"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
 
-            </LinearLayout>
-        </ScrollView>
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/equipe_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:text="@string/equipe_title"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#36816F">
+
+                        <LinearLayout
+                            android:id="@+id/classement_droite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -93,7 +137,6 @@
                 android:textSize="11sp" />
 
         </LinearLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
