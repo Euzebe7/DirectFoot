@@ -14,8 +14,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView equipe_name;
-    private  TeamTable team;
+    MainActivity main =this;
+    private static String rayyan = "RAYYAN LE COCHON";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,29 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button direct = (Button) findViewById(R.id.direct);
         direct.setOnClickListener(directOnClickListener);
 
-       /* equipe_name = findViewById(R.id.Equipe_);
-        try {
-            Table classement = new Table(Championship.LIGUE_1);
-            ArrayList <TeamTable> table = classement.getTeamsTable();
-            TeamTable team = table.get(0);
-
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-*/
-
-        // Intent login = new Intent(getApplicationContext(), Recherche.class);
-
-    /*    String imageUri = "https://medias.lequipe.fr/logo-football/692/";
-        ImageView ivBasicImage = (ImageView) findViewById(R.id.ImageView01);
-        Picasso.get().load(imageUri).into(ivBasicImage);*/
-
     }
-
-
-    MainActivity main =this;
 
     /** Listener à l'écoute des evenements Bouton */
     OnClickListener directOnClickListener = new OnClickListener() {
